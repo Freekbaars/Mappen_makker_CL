@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Schepen>
+	<Schip>
+		<Type>Gasschip</Type>
+		<Mappen>
+			<Map>
+				<Naam>Documenten</Naam>
+			</Map>
+			<Map>
+				<Naam>Plannen</Naam>
+			</Map>
+			<Map>
+				<Naam>Certificaten</Naam>
+			</Map>
+			<Map>
+				<Naam>tekeningen</Naam>
+			</Map>
+		</Mappen>
+	</Schip>
+	
+	<Schip>
+		<Type>Persoonschip</Type>
+		<Mappen>
+			<Map>
+				<Naam>Documenten</Naam>
+			</Map>
+			<Map>
+				<Naam>Plannen</Naam>
+			</Map>
+			<Map>
+				<Naam>Certificaten</Naam>
+				<subMap>Passagiers</subMap>
+				<subMap>Bemanning</subMap>
+			</Map>
+			<Map>
+				<Naam>tekeningen</Naam>
+			</Map>
+		</Mappen>
+	</Schip>
+</Schepen>
