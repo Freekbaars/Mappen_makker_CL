@@ -60,7 +60,7 @@ namespace Mappen_makker_CL
 
             var gekozenSchip = schepen[keuze - 1];
             string geselecteerdTypeSchip = gekozenSchip.Element("Type")?.Value;
-            string hoofdMapPad = Path.Combine(locatie, $"{scheepsNummer} {scheepsNaam} ({geselecteerdTypeSchip})");
+            string hoofdMapPad = Path.Combine(locatie, $"{scheepsNaam} BN{scheepsNummer} ({geselecteerdTypeSchip})");
 
             // Maak de hoofdmap aan als deze nog niet bestaat
             if (!Directory.Exists(hoofdMapPad))
@@ -76,7 +76,7 @@ namespace Mappen_makker_CL
                 foreach (var map in mappen)
                 {
                     // Lees de naam van de hoofdmap uit het <Naam>-element
-                    string mapNaam = $"{map.Element("Naam")?.Value} {scheepsNummer}";
+                    string mapNaam = $"{map.Element("Naam")?.Value} BN{scheepsNummer}";
                     string volledigeMapPad = Path.Combine(hoofdMapPad, mapNaam);
 
                     if (!Directory.Exists(volledigeMapPad))

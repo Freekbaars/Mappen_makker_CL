@@ -37,4 +37,24 @@
 			</Map>
 		</Mappen>
 	</Schip>
+
+	<Schip>
+		<Type>Tank schip</Type>
+		<Mappen>
+			<Map>
+				<Naam>Documenten</Naam>
+			</Map>
+			<Map>
+				<Naam>Plannen</Naam>
+			</Map>
+			<Map>
+				<Naam>Certificaten</Naam>
+				<subMap>Passagiers</subMap>
+				<subMap>Bemanning</subMap>
+			</Map>
+			<Map>
+				<Naam>tekeningen</Naam>
+			</Map>
+		</Mappen>
+	</Schip>
 </Schepen>
