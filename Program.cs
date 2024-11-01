@@ -48,7 +48,7 @@ namespace Mappen_makker_CL
             Console.WriteLine("Kies een type schip:");
             for (int i = 0; i < schepen.Count; i++)
             {
-                string typeSchip = schepen[i].Element("Type")?.Value;
+                string? typeSchip = schepen[i].Element("Type")?.Value;
                 Console.WriteLine($"{i + 1}: {typeSchip}");
             }
 
@@ -59,7 +59,7 @@ namespace Mappen_makker_CL
             } while (!int.TryParse(Console.ReadLine(), out keuze) || keuze < 1 || keuze > schepen.Count);
 
             var gekozenSchip = schepen[keuze - 1];
-            string geselecteerdTypeSchip = gekozenSchip.Element("Type")?.Value;
+            string? geselecteerdTypeSchip = gekozenSchip.Element("Type")?.Value;
             string hoofdMapPad = Path.Combine(locatie, $"{scheepsNaam} BN{scheepsNummer} ({geselecteerdTypeSchip})");
 
             // Maak de hoofdmap aan als deze nog niet bestaat
